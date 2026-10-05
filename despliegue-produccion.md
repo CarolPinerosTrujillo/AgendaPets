@@ -1,8 +1,8 @@
 # Despliegue a producción — Frontend
 
-> Repo: [AgendaPets/AgendaPets](https://github.com/AgendaPets/AgendaPets)  
-> Fecha: **15 de septiembre de 2026**  
-> Este archivo documenta **solo** la web estática (Vercel) y cómo habla con la API. El backend y la base de datos están en el otro repo: [AgendaPets/Backend_AgendaPets](https://github.com/AgendaPets/Backend_AgendaPets) (`despliegue-produccion.md`).
+> Repo (fork personal): [CarolPinerosTrujillo/AgendaPets](https://github.com/CarolPinerosTrujillo/AgendaPets)  
+> Fecha: **5 de octubre de 2026**  
+> Este archivo documenta **solo** la web estática (Vercel) y cómo habla con la API. El backend y la base de datos están en el otro fork: [CarolPinerosTrujillo/Backend_AgendaPets](https://github.com/CarolPinerosTrujillo/Backend_AgendaPets) (`despliegue-produccion.md`).
 
 ---
 
@@ -10,8 +10,8 @@
 
 | Pieza | Dónde | URL |
 |-------|--------|-----|
-| **Esta web** | Vercel, proyecto `agenda-pets` | https://agenda-pets-pi.vercel.app |
-| **API (otro repo)** | Render, `agendapets-api` | https://agendapets-api.onrender.com |
+| **Esta web** | Vercel, proyecto `agendapets1` | https://agendapets1.vercel.app |
+| **API (otro repo)** | Render, servicio `agendapets-api-carol` | https://agendapets-api-carol.onrender.com |
 
 Antes el sitio en Vercel (y GitHub Pages) era estático: usuarios, servicios y citas vivían en `localStorage`. No había sesión JWT ni reservas compartidas entre clientes.
 
@@ -19,7 +19,7 @@ Después:
 
 - Login, registro, catálogo, reservas y cancelaciones van a la API.
 - En local (`localhost` / `127.0.0.1`) el front apunta a `http://localhost:8080`.
-- En Vercel apunta a `https://agendapets-api.onrender.com`.
+- En Vercel apunta a `https://agendapets-api-carol.onrender.com`.
 
 ### Cuentas de prueba (las crea el backend)
 
@@ -58,9 +58,9 @@ Rama `main`:
 
 - `6e1ce4d` — *Conecta el frontend a la API de producción para reservas reales.*
 
-Proyecto Vercel: `agenda-pets` (`prj_zhLw46C1tmbNQHicRpUPfr4ra7Va`), equipo `juan-carlos-pastas-valencias-projects`, framework Other (estático).
+Proyecto Vercel: `agendapets1` (cuenta personal de Carol Pineros), framework Other (estático).
 
-El deploy de producción se hizo con CLI (`vercel --prod`) desde la raíz de este repo. **Aún no** está ligado a GitHub: un `git push` a `main` no publica solo. Hay que volver a desplegar con CLI o enlazar el repo en el dashboard de Vercel.
+El deploy se puede hacer por dashboard (Import Git Repository → `CarolPinerosTrujillo/AgendaPets`) o por CLI (`vercel --prod`) desde la raíz de este repo.
 
 ---
 
@@ -112,7 +112,7 @@ Ya no se usan como fuente de verdad las claves `usuarios`, `servicios` ni `citas
 
 `/`, `/reservar`, `/iniciarSesion`, `/citas-usuario`, `/VAdmin/mis-servicios`
 
-`js/config.js` en producción apunta a `https://agendapets-api.onrender.com`.
+`js/config.js` en producción apunta a `https://agendapets-api-carol.onrender.com`.
 
 ---
 
@@ -158,8 +158,8 @@ Detalle de la API y Neon: documento del repo backend.
 
 ## 11. Pendiente (este repo)
 
-- Enlazar Vercel a `AgendaPets/AgendaPets` para publicar en cada push a `main`.
-- Actualizar badges del `readme.md` (aún apuntan a GitHub Pages).
+- Enlazar Vercel a `CarolPinerosTrujillo/AgendaPets` para publicar en cada push a `main`.
+- Actualizar badges del `readme.md` (fotos/capturas del proyecto).
 
 ---
 

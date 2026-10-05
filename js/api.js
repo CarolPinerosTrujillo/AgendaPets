@@ -1,7 +1,7 @@
 (function (global) {
   function baseUrl() {
     var config = global.AGENDA_PETS_CONFIG || {};
-    return String(config.apiUrl || "https://agendapets-api.onrender.com").replace(/\/$/, "");
+    return String(config.apiUrl || "https://agendapets-api-carol.onrender.com").replace(/\/$/, "");
   }
 
   function mensajeError(data, fallback) {

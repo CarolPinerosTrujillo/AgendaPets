@@ -9,10 +9,10 @@
 ## 🚀 Deploys
 
 <p align="center">
-  <a href="https://agenda-pets-pi.vercel.app/" target="_blank">
+  <a href="https://agendapets1.vercel.app/" target="_blank">
     <img src="https://img.shields.io/badge/Frontend-Vercel-000000?style=for-the-badge&logo=vercel" alt="Frontend Deploy">
   </a>
-  <a href="https://github.com/AgendaPets/Backend_AgendaPets" target="_blank">
+  <a href="https://github.com/CarolPinerosTrujillo/Backend_AgendaPets" target="_blank">
     <img src="https://img.shields.io/badge/Backend-GitHub-181717?style=for-the-badge&logo=github" alt="Backend GitHub">
   </a>
 </p>
@@ -44,7 +44,7 @@ Plataforma web para la gestión de reservas de servicios de **pet grooming**, di
 | PostgreSQL | Neon Cloud |
 | JWT | 0.12.6 |
 
-> 📦 Para más información sobre el backend, visita el [repositorio del Backend](https://github.com/AgendaPets/Backend_AgendaPets).
+> 📦 Para más información sobre el backend, visita el [repositorio del Backend](https://github.com/CarolPinerosTrujillo/Backend_AgendaPets).
 
 ---
 
